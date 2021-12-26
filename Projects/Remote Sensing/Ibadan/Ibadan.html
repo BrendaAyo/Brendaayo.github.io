@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Urban Sprawl of Ibadan, Nigeria</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section class="intro">
+						<header>
+							<h1>Urban Sprawl of Ibadan, Nigeria</h1>
+							<ul class="actions">
+								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<span class="image fill" data-position="center"><img src="images/cover.jpg" alt="" /></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section id="first">
+						<header>
+							<h2>SUMMARY</h2>
+						</header>
+						<div class="content">
+							<p><strong>This project</strong>  assessed land use change and urban sprawl in Ibadan metropolis between the years
+								1984 to 2018 using Geographic Information Systems (GIS) and Remote Sensing to analyze and interpret the changes 
+								for urban growth monitoring and planning. Landsat satellite images were the data used for the study. 
+								Landsat images downloaded from the <a href="https://earthexplorer.usgs.gov/" target="_blank">USGS Earth Explorer</a> were digitally pre-processed using ArcMap 10.6. 
+								Supervised Classification was performed using <strong>Random Forest algorithm</strong> leading to the identification of 
+								5 land use classes in the study area which was validated through accuracy assessment in <a href="https://www.cs.waikato.ac.nz/ml/weka/" target="_blank">Weka Software</a> with 
+								reference to <a href="https://earth.google.com/web/" target="_blank">Google Earth imagery</a>.</p>
+							<p>To show the trend and distribution of land use features in the study area within the period under investigation, 
+								Change detection of Urban growth was evaluated by extracting urban from the classified images with the use of 
+								raster calculator. Continuous urban growth was depicted i.e. 28% (1984-2000), 43% (2000-2014) and 21% (2014-2018). 
+								However, the forest area coverage continued depleting to almost zero from 1984 to 2018. Findings showed that 
+								expansion of urban areas has been continuous between 1984 and 2018 while forest habitat has been depleting. 
+								Urban expansion in Ibadan is outwards from Ibadan city.</p>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Backgorund</h2>
+						</header>
+						<div class="content">
+							<p>This project examined the pattern of change in land use land cover in relation to urban expansion 
+								of Ibadan from a well-known historical war camp of the Yoruba people to its present state and its 
+								capacity to become a mega city, using Remote sensing and geographic information system (GIS) techniques.
+								This information can be used for city planning, decision-making and resource management towards sustainable urban 
+								development.</p>
+							<span class="image main"><img src="images/studyarea.jpg" alt="" /></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>DATA AND METHODOLOGY</h2>
+						</header>
+						<div class="content">
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3>DATA</h3>
+									</header>
+									<div class="content">
+										<p>The satellite images used, including Landsat Thematic Mapper (TM), Enhanced Thematic Mapper (ETM+) 
+											and the Operational Land Imager (OLI) images with a 30 m spatial resolution covering the temporal 
+											scenes from 1984, 2000, 2014 and 2018 were freely downloaded from the United States 
+											Geological Survey (USGS) portal. The choice of the image dates was based on the assumption 
+											that multi temporal images for change monitoring should be from the same season and the images in 
+											the dry season are cloud-free or have low cloud cover.</p>
+										<span class="image main"><img src="images/Ibadan_data.jpg" alt="" /></span>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3>Methodology</h3>
+									</header>
+									<div class="content">
+										<p>Training Sample were generated from each satellite image for five classes i.e. Urban, Vegetation, Forest, Water Body 
+											and Bare Soil with reference to the false and true colour band combinations of satellite images and high-resolution 
+											satellite images i.e. Google Earth. More than one training sample was used to represent a particular class. The 
+											training sample polygons were selected in agreement with the Landsat Image and Google Earth.</p>
+										<div class="gallery">
+											<a class="landscape"><img src="images/Ibadan_Methodology.jpg" alt="" /></a>
+										</div>
+										<p>Random forest classifier was employed for classification tests in Spyder (Python v3.7) to produce the LULC maps. 
+											These classifications were validated through an accuracy assessment process which was performed using data points 
+											from satellite images in Weka software. Binary change detection technique was used where it produces only two possibilities 
+											i.e. change and no change to isolate and extract urban growth from the LULC maps to illustrate the spatio-temporal change in urban growth.</p>
+									</div>
+								</section>
+
+						</div>
+					</section>
+
+
+				<!-- Section -->
+				<section>
+					<header>
+						<h2>RESULTS</h2>
+					</header>
+					<div class="content">
+						
+						<!-- Section -->
+							<section>
+								<header>
+									<h3>LandUse LandCover Classification</h3>
+								</header>
+								<div class="content">
+									<p>Between 1984 and 2000, the urban growth was 28% at an average rate of 3.64 SqKm per year; 2000 and 2014, there was an urban growth rate of 
+										43% at an average expansion rate of 8.01 SqKm per year; and 2018 – 2014, an urban expansion of 21 SqKm was exhibited. Over the 33 years, the 
+										urban growth i.e. built up areas were more than doubled, an increase from 205 km2 to 454 SqKm. This drastic change influenced the other classes 
+										like forest and water which decreased and bare soil that generally increased. Bare soil changes from 404.7 SqKm in 1984, to 686.2 SqKm in 2000 and 
+										then to about 938.6 SqKm in 2014. By implication, the trend shows that increase in human activities in a particular area can increase land exposure due 
+										to degradation and other activities.</p>
+									<div class="gallery">
+										<a href="images/06.jpg"><img src="images/1984.jpg" alt="" /></a>
+										<a href="images/06.jpg"><img src="images/2000.jpg" alt="" /></a>
+										<a href="images/06.jpg"><img src="images/2014.jpg" alt="" /></a>
+										<a href="images/06.jpg"><img src="images/2018.jpg" alt="" /></a>
+									</div>
+									<p>The forest cover exhibited the highest amount of decrease to 0.06 Km2 in 2018 from 896.24 SqKm in 1984. Between 
+										1984 and 2000, the decrease in forest coverage was 84%. A small increase of 5% was experienced between 2000 and 2014, however, a decrease 
+										to 0.06 SqKm from 2014 to 2018 was exhibited. respectively. This trend shows a continuous decrease in forest areas as they are replaced by built-up 
+										areas and also cleared for agriculture. The vegetation decreased from 1984 to 2014 but slightly increased by 15% from 2014 to 2018. This may be due to 
+										the clearing of forests and using the land for agriculture. The relationship between the growth of Urban area, vegetation and forest is somewhat an ‘invasion’ 
+										pattern where the Urban area grow and invades into the adjacent Vegetation, and the vegetation also expands outward invading into the forests.</p>
+								</div>
+							</section>
+
+						<!-- Section -->
+							<section>
+								<header>
+									<h3>Spatio-temporal urban growth pattern analysis </h3>
+								</header>
+								<div class="content">
+									<div class="gallery">
+										<a class="landscape"><img src="images/Graphs.jpg" alt="" /></a>
+										<p>The period between 2014 and 2018 depicts a rapid expansion as shown on the urban growth graph above. The map revealed that the morphology of 
+											the urban sprawl is multi-directional with an outward growth from the city centre. The area covered by urban area increased from 205 SqKm to 263 SqKm to 376 SqKm 
+											to 454 SqKm in 1984, 2000, 2014 and 2018 respectively. The period between 2000 and 2014 saw the largest growth in the Urban area. 
+											However, the Period 2014 to 2018 (4 Years) exhibits a very drastic increase in the Urban Area for such a short time period.</p>
+										<a class="landscape"><img src="images/Growth.jpg" alt="" /></a>
+
+									</div>
+								</div>
+							</section>
+
+					</div>
+				</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2></h2>
+						</header>
+					</section>
+
+				<!-- Copyright -->
+					<div class="copyright">&copy; Brenda Ayo. 2022. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
