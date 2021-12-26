@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Correlation Between an Eagle Owl’s Flight Height and Temperature</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section class="intro">
+						<header>
+							<h1>Correlation Between an Eagle Owl’s Flight Height and Temperature</h1>
+							<p>Photo by <a href="https://unsplash.com/@sonderquest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sonder Quest</a> on <a href="https://unsplash.com/s/photos/eagle-owl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+  
+							<ul class="actions">
+								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<span class="image fill" data-position="center"><img src="images/cover.jpg" alt="" /></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section id="first">
+						<header>
+							<h2>Summary</h2>
+						</header>
+						<div class="content">
+							<p>This Project demonstrated how Python in GIS with emphasis on <a href="https://pro.arcgis.com/en/pro-app/arcpy/get-started/what-is-arcpy-.htm" target="_blank">Arcpy</a> and open source python libraries like <a href="https://numpy.org/" target="_blank">Numpy</a>, <a href="https://matplotlib.org/" target="_blank">Matplotlib</a> and <a href="https://pandas.pydata.org/" target="_blank">Pandas</a> can be used to answer the research question <strong>What is the correlation between monthly mean temperature variation and movement 
+								behavior male and female eagle owls in terms of flight height and how can we seek any visible pattern between the variations of 
+								these two variables?</strong>.
+								This was based on GPS Tracking data of 21 eagle owls was obtained from the Movebank online database of animal tracking. 
+								The 21 eagle owls’ data is located in Germany states of Nordrhein-Westfalen, Bayern, Hessen and Niedersachsen with most of the data
+								located in Nordrhein-Westfalen. ArcGIS Toolboxes for Data preprocessing, Analysis and Post processing 
+								were generated to automate the workflow and to ensure reproducibility on similar data.</p>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>APPROACH</h2>
+						</header>
+						<div class="content">
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3>DATA PREPARATION</h3>
+										<p>Creation of File Geodatabase & Feature classes</p>
+										<p>Coordinate System Transformation of datasets (geographic to UTM)</p>
+										<p>Update Bird gender information</p>
+										<p>Extract month and year from timestamp field</p>
+										<p>Extract mean ground temperature to Point feature class</p>
+										<p>Flight height calculation</p>
+									</header>
+									<div class="content">
+										<span class="image main"><img src="images/Eagle1.jpg" alt="" /></span>
+							    		<span class="image main"><img src="images/Eagle2.jpg" alt="" /></span>
+										<span class="image main"><img src="images/Eagle3.jpg" alt="" /></span>
+										<span class="image main"><img src="images/Eagle4.jpg" alt="" /></span>
+										<span class="image main"><img src="images/Eagle5.jpg" alt="" /></span>
+										<span class="image main"><img src="images/Eagle6.jpg" alt="" /></span>
+										<span class="image main"><img src="images/Eagle7.jpg" alt="" /></span>
+									</div>
+								</section>
+
+							<!-- Section -->
+							<section>
+								<header>
+									<h3>ANALYSIS & POST-PROCESSING</h3>
+									<p>Thematic plots of birds with monthly mean temperature and monthly mean flight height above the ground.</p>
+									<p>Scatter plot for mean temperature vs flight height for male and female birds.</p>
+									<p>Bar graphs of temperature, altitude and Convex Hull per month from all years.</p>
+									<p>Gender comparison between temperature and altitude monthly.</p>
+									<p>Geoprocessing tool development using ArcGIS Pro to create user friendly interface.</p>
+								</header>
+								<div class="content">
+									<span class="image main"><img src="images/Eagle8.jpg" alt="" /></span>
+									<span class="image main"><img src="images/Eagle9.jpg" alt="" /></span>
+									<span class="image main"><img src="images/Eagle10.jpg" alt="" /></span>
+									<span class="image main"><img src="images/Eagle11.jpg" alt="" /></span>
+									<span class="image main"><img src="images/Eagle12.jpg" alt="" /></span>
+								</div>
+							</section>
+						</div>
+					</section>
+
+
+				<!-- Section -->
+				<section>
+					<header>
+						<h2>RESULTS</h2>
+					</header>
+					<div class="content">
+
+						<!-- Section -->
+							<section>
+								<header>
+									<h3>Thematic Plots</h3>
+								</header>
+								<div class="content">
+									<span class="image main"><img src="images/Eagle13.jpg" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- Section -->
+							<section>
+								<header>
+									<h3>Bar Graphs</h3>
+								</header>
+								<div class="content">
+									<span class="image main"><img src="images/Eagle14.jpg" alt="" /></span>
+								</div>
+							</section>
+
+
+						<!-- Section -->
+							<section>
+								<header>
+									<h3>Scatter Plots</h3>
+								</header>
+								<div class="content">
+									<span class="image main"><img src="images/Eagle15.jpg" alt="" /></span>
+								</div>
+							</section>	
+					</div>
+				</section>
+
+
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>MORE INFORMATION</h2>
+							
+						</header>
+						<div class="content">
+							<p><strong>The GitHub repo</strong> with the Scripts and ArcGIS Toolboxes are available Here</p>
+							<ul class="actions">
+								<li><a href="https://github.com/BrendaAyo/Python-In-GIS" class="button primary large">GITHUB REPOSITORY</a></li>
+							</ul>
+						</div>
+					</section>
+
+
+				<!-- Copyright -->
+					<div class="copyright">&copy; Brenda Ayo. 2022. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
